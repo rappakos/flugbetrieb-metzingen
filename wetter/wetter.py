@@ -54,7 +54,7 @@ def get_rain_data(timeframe_start:int, timeframe_end:int, hour_of_day:int):
     # WRTR;stdl. Niederschlagsform (=Niederschlagshoehe_ind);numerischer Code;
     raw_dataframes = load_raw_dataframes()
     df = raw_dataframes['RR']['hist']  
-    df = df.drop(['STATIONS_ID','QN_8','eor','RS_IND','WRTR'], axis=1).rename(columns={'  R1':'percip'})
+    df = df.drop(['STATIONS_ID','QN_8','eor','RS_IND','WRTR'], axis=1).rename(columns={'  R1':'precip'})
     mask = (df['MESS_DATUM'] >= timeframe_start) & (df['MESS_DATUM'] <= timeframe_end)
     mask = mask & (df['MESS_DATUM'] % 100 == hour_of_day)
     df = df[mask] # reduce size
