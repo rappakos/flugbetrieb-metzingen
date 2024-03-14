@@ -36,6 +36,12 @@ def get_wind_data(timeframe_start:int, timeframe_end:int, hour_of_day:int):
     #print(raw_dataframes)
     df = raw_dataframes['FF']['hist']    
 
+    df_akt = raw_dataframes['FF']['akt']
+    histor_max_date = df['MESS_DATUM'].max()
+    df_akt = df_akt[(df_akt['MESS_DATUM'] >= timeframe_start) & ( df_akt['MESS_DATUM'] > histor_max_date) & (df_akt['MESS_DATUM'] <= timeframe_end) ]
+    if not df_akt.empty:
+        df = pd.concat([df,df_akt])        
+
     df = df.drop(['STATIONS_ID','QN_3','eor'], axis=1).rename(columns={'   F': 'strength', '   D': 'direction'})
     mask = (df['MESS_DATUM'] >= timeframe_start) & (df['MESS_DATUM'] <= timeframe_end)
     #mask = mask & (df['strength'] >= 0) & (df['strength'] < 6) # too strong wind
@@ -54,6 +60,14 @@ def get_rain_data(timeframe_start:int, timeframe_end:int, hour_of_day:int):
     # WRTR;stdl. Niederschlagsform (=Niederschlagshoehe_ind);numerischer Code;
     raw_dataframes = load_raw_dataframes()
     df = raw_dataframes['RR']['hist']  
+
+    df_akt = raw_dataframes['RR']['akt']
+    histor_max_date = df['MESS_DATUM'].max()
+    df_akt = df_akt[(df_akt['MESS_DATUM'] >= timeframe_start) & ( df_akt['MESS_DATUM'] > histor_max_date) & (df_akt['MESS_DATUM'] <= timeframe_end) ]
+    if not df_akt.empty:
+        df = pd.concat([df,df_akt])        
+
+
     df = df.drop(['STATIONS_ID','QN_8','eor','RS_IND','WRTR'], axis=1).rename(columns={'  R1':'precip'})
     mask = (df['MESS_DATUM'] >= timeframe_start) & (df['MESS_DATUM'] <= timeframe_end)
     mask = mask & (df['MESS_DATUM'] % 100 == hour_of_day)
@@ -66,8 +80,11 @@ def get_rain_data(timeframe_start:int, timeframe_end:int, hour_of_day:int):
 if __name__=='__main__':
     load_dotenv()
 
-    df = get_wind_data(2021050100, 2021123123, 13)
+    df = get_wind_data(2021050100, 2023123123, 13)
 
-    print(df.head())
+    print(df.tail())
 
+    df = get_rain_data(2021050100, 2023123123, 13)
+
+    print(df.tail(10))
 
