@@ -1,6 +1,12 @@
 # flugbetrieb-metzingen
 Daten Sammlung und Analyse
 
+## Kurze Liste
+
+| Tag | Bemerkung |
+|----------|-----------------------------------------|
+|17.03.2024| Gutes Wetter, 2 Piloten mit gelb angemeldet (Screenshot bei Akos)|
+
 ## Probleme
 
 ### Haben wir Tage verpasst?
@@ -10,6 +16,13 @@ TODO @Akos Wetterdaten & XC tracks
 ### Streckenflugpotential besser ausnutzen
 
 TODO @Akos Wetterdaten & XC tracks
+
+### Vereinsarbeit besser verteilen
+
+Idee: Punktsystem 
+Braucht App zum einfachen Tracken
+TODO @Akos Statistik
+
 
 ## Vergleich Dienstplanungen
 
@@ -30,9 +43,14 @@ Nicht vergleichbar.
 
 ### Windenfahrerdienst GSC Landesbergen
 
-TODO @Akos System erkundigen
+* 2 Schleppstrecken (Grundsätzlich alle Windrichtungen)
+* Sie hatten WF-Plan, haben aber abgelöst
+
+TODO @Akos Details erkundigen
 
 ### Windenfahrerdienst beim Segelflugbetrieb
+
+Erwartete Arbeitsstunden => Bezahlung wenn nicht geleistet => stattdessen Punktsystem als Motivation?
 
 TODO pro/kontra
 
@@ -50,7 +68,7 @@ Es gibt keine einfache Lösungen, aber wir haben Möglichkeiten an 3 Ebenen.
 ### Vereinsebene
 
  * WF-Anteil erhöhen (projiziert an den aktiven Mitgliedern)
- * Zusätzliche Belohnung für (E)WF-Tätigkeiten
+ * Zusätzliche Belohnung für (E)WF-Tätigkeiten => SEE Punktsystem
  * Kalender-Regeln überdenken
 
 ### Regional
@@ -63,5 +81,18 @@ Es gibt keine einfache Lösungen, aber wir haben Möglichkeiten an 3 Ebenen.
 
 * Fernbedienung ermöglichen
 * Selbstschlepp ermöglichen
+
+### Punktsystem
+* TODO @Akos Statistik über Flugtage pro Jahr und Schlepps pro Tag
+* Mitglieder müssen gewisse anzahl von Punkten leisten. ZB. (noch nicht final!)
+  
+  * 1 Schlepp als Startleiter = 0.5 Punkt
+  * 1 Schlepp als WF = 1 Punkt
+  * 1 Schlepp als EWF = 2 Punkte
+  * sonstige Tätigkeiten ebenso eingestuft
+
+
+
+
 
 
