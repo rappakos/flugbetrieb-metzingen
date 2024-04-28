@@ -5,6 +5,7 @@ import pandas as pd
 
 HANNOVER_DWD_CODE = '02014'
 
+FLUGBAHN_DIR = 30 # 03 & 21
 
 def load_raw_dataframes():
 
@@ -28,7 +29,7 @@ def load_raw_dataframes():
     return raw_dataframes
 
 
-def get_wind_data(timeframe_start:int, timeframe_end:int, hour_of_day:int):
+def _base_wind_data(timeframe_start:int, timeframe_end:int):
     """
         timeframe_start, timeframe_end format YYYYMMDDhh        
     """
@@ -44,13 +45,11 @@ def get_wind_data(timeframe_start:int, timeframe_end:int, hour_of_day:int):
 
     df = df.drop(['STATIONS_ID','QN_3','eor'], axis=1).rename(columns={'   F': 'strength', '   D': 'direction'})
     mask = (df['MESS_DATUM'] >= timeframe_start) & (df['MESS_DATUM'] <= timeframe_end)
-    #mask = mask & (df['strength'] >= 0) & (df['strength'] < 6) # too strong wind
-    mask = mask & (df['MESS_DATUM'] % 100 == hour_of_day) & (df['direction'] >= 0)
-    df = df[mask] # reduce size
-    
+    df = df[mask]
+
     return df
 
-def get_rain_data(timeframe_start:int, timeframe_end:int, hour_of_day:int):
+def _base_rain_data(timeframe_start:int, timeframe_end:int):
     """
         timeframe_start, timeframe_end format YYYYMMDDhh        
     """
@@ -67,24 +66,75 @@ def get_rain_data(timeframe_start:int, timeframe_end:int, hour_of_day:int):
     if not df_akt.empty:
         df = pd.concat([df,df_akt])        
 
-
     df = df.drop(['STATIONS_ID','QN_8','eor','RS_IND','WRTR'], axis=1).rename(columns={'  R1':'precip'})
     mask = (df['MESS_DATUM'] >= timeframe_start) & (df['MESS_DATUM'] <= timeframe_end)
-    mask = mask & (df['MESS_DATUM'] % 100 == hour_of_day)
+
+    df = df[mask]
+
+    return df
+
+def get_wind_data(timeframe_start:int, timeframe_end:int, hour_of_day:int):
+    df = _base_wind_data(timeframe_start,timeframe_end)
+    mask = (df['MESS_DATUM'] % 100 == hour_of_day) & (df['direction'] >= 0)
+    df = df[mask] # reduce size
+    
+    return df
+
+def get_rain_data(timeframe_start:int, timeframe_end:int, hour_of_day:int):
+
+    df = _base_rain_data(timeframe_start, timeframe_end)
+    mask = (df['MESS_DATUM'] % 100 == hour_of_day)
     df = df[mask] # reduce size
 
     return df 
 
 
 
+def get_combined_data(timeframe_start:int, timeframe_end:int,day_of_week:str, from_hour:int, to_hour:int):
+    """
+        timeframe_start, timeframe_end format YYYYMMDDhh
+        day_of_week format "Sat", "Sun" 
+    """
+    from datetime import datetime
+    import numpy as np
+
+    df_w = _base_wind_data(timeframe_start,timeframe_end)
+    mask = (df_w['direction'] >= 0)
+    mask = mask & (df_w['MESS_DATUM'] % 100 >= from_hour) & (df_w['MESS_DATUM'] % 100 <= to_hour)
+
+    df_w = df_w[mask] # reduce size
+
+    df_w[['wind_alignment', 'meas_hour', 'meas_day',  'day_of_week' ]] = df_w.apply(lambda row: pd.Series([ np.sin((row['direction'] - FLUGBAHN_DIR )* np.pi / 180.)**2, 
+                                                int(row['MESS_DATUM'] % 100),
+                                                str(row['MESS_DATUM'])[:8],
+                                                datetime.strptime(str(row['MESS_DATUM'])[:8], "%Y%m%d").strftime('%a') ]), axis=1)
+
+    df_r = _base_rain_data(timeframe_start,timeframe_end)
+    mask = (df_r['MESS_DATUM'] % 100 >= from_hour) & (df_r['MESS_DATUM'] % 100 <= to_hour)
+    df_r = df_r[mask] # reduce size
+
+    df_w = df_w.join(df_r.set_index("MESS_DATUM"), on="MESS_DATUM", validate="1:1" )
+    mask = (df_w['day_of_week']==day_of_week)    
+    df_w = df_w[mask] # reduce size
+    df_w = df_w.drop(['direction','day_of_week'], axis=1)
+
+    return df_w.pivot(index='meas_day',columns='meas_hour', values=['strength','wind_alignment','precip'])
+
+
 if __name__=='__main__':
     load_dotenv()
 
-    df = get_wind_data(2021050100, 2023123123, 13)
+    #df = get_wind_data(2021050100, 2023123123, 13)
+
+    #print(df.tail())
+
+    #df = get_rain_data(2021050100, 2023123123, 13)
+
+    #print(df.tail())
+
+    df = get_combined_data(2021050100, 2023123123, 'Sun', 11,16 )
+
+    print(df.head())
 
     print(df.tail())
-
-    df = get_rain_data(2021050100, 2023123123, 13)
-
-    print(df.tail(10))
 
