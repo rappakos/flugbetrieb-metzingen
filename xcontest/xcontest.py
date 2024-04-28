@@ -24,6 +24,7 @@ SITE_GEOLOC = {
 DELAY = 1 # seconds
 
 
+
 def login():
     
     options = Options()
@@ -46,12 +47,23 @@ def login():
 
     return driver
 
+def load_from_file(launch):
+    with open(os.environ['FLIGHT_DAYS_TXT'],'r') as f:
+        rows = f.read()
+
+    return rows
+
+def save_to_file(flight_day_list):
+    with open(os.environ['FLIGHT_DAYS_TXT'],'w') as f:
+        for day in flight_day_list:
+            f.write(f"{day}\n")
 
 def flight_days(driver, launch):
     if launch not in SITE_GEOLOC:
         print('Takeoff ID not defined')
         return []
-    
+
+
     #
     iso_date = '2024-01-01' # does not matter
     long, lat =  SITE_GEOLOC[launch]['Long'], SITE_GEOLOC[launch]['Lat']
