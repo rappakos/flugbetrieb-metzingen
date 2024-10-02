@@ -8,7 +8,8 @@ Daten Sammlung und Analyse
 |17.03.2024| Gutes Wetter, 2 Piloten mit gelb angemeldet (Screenshot bei Akos)|
 |21.04.2024| Kräftiger Wind, 4 Starts. Ohne Dienstplan hätten wir wahrscheinlich kein Betrieb.|
 |27. & 28.04.2024| Am 27.04. (Samstag) hätten wir wahrscheinlich fliegen können, es gab Freitag noch gar keine Anmeldungen. Für Sonntag wurde mehr Wind vorhergesagt.|
-|07. & 08.09.2024| Beiden Tagen hätten fliegbar gewesen, Pilotenmangel.
+|07. & 08.09.2024| Beiden Tagen hätten fliegbar gewesen, Pilotenmangel.|
+|29.09.2024|Schönes Wetter, ohne Dienstplan hätten wir wahrscheinlich anderswo geflogen|
 
 
 ## Probleme

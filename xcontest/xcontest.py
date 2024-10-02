@@ -31,7 +31,8 @@ def login():
     options.add_argument("--headless=new")
     options.add_argument('log-level=3')
     
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    #driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    driver = webdriver.Chrome(options=options)
     try: 
         driver.get('https://www.xcontest.org/')
         wait=WebDriverWait(driver, DELAY)
