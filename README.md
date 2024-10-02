@@ -12,7 +12,7 @@ Daten Sammlung und Analyse
 |29.09.2024|Schönes Wetter, ohne Dienstplan hätten wir wahrscheinlich anderswo geflogen|
 
 ## Statisik 
-Flugtage in DHV XC bzw Xcontest ab 2018 aus dem [notebook](./flight_days_checks.ipynb)
+Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.ipynb)
 
 | Jahr   | Montag | Dienstag | Mittwoch | Donnerstag | Freitag | Samstag | Sonntag |  Total |
 |:-------|------------------------:|-------------------------:|---------------------------:|--------------------------:|------------------------:|--------------------------:|------------------------:|----------------:|
@@ -26,6 +26,11 @@ Flugtage in DHV XC bzw Xcontest ab 2018 aus dem [notebook](./flight_days_checks.
 | 2024   |                       3 |                        2 |                          1 |                         1 |                       1 |                         7 |                       7 |              22 |
 | Total    |                       9 |                        5 |                          6 |                        10 |                      20 |                        50 |                      65 |             165 |
 
+### Perioden
+
+* COVID-Verbot
+* Kella-Winde Regelung kaputt ab ca. 08.10.2022 [Ladegerät](https://photos.app.goo.gl/jWHgNVxGqZ1k3UQU8) bis Frühling 2023
+* ELOWIN im Garage 18.03.2023?
 
 
 
