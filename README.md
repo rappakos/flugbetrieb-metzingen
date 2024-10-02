@@ -11,6 +11,23 @@ Daten Sammlung und Analyse
 |07. & 08.09.2024| Beiden Tagen hätten fliegbar gewesen, Pilotenmangel.|
 |29.09.2024|Schönes Wetter, ohne Dienstplan hätten wir wahrscheinlich anderswo geflogen|
 
+## Statisik 
+Flugtage in DHV XC bzw Xcontest ab 2018 aus dem [notebook](./flight_days_checks.ipynb)
+
+| Jahr   | Montag | Dienstag | Mittwoch | Donnerstag | Freitag | Samstag | Sonntag |  Total |
+|:-------|------------------------:|-------------------------:|---------------------------:|--------------------------:|------------------------:|--------------------------:|------------------------:|----------------:|
+| 2017   |                       1 |                        0 |                          0 |                         2 |                       2 |                         7 |                      13 |              25 |
+| 2018   |                       2 |                        1 |                          0 |                         0 |                       8 |                         8 |                      14 |              33 |
+| 2019   |                       1 |                        0 |                          1 |                         2 |                       3 |                         6 |                       9 |              22 |
+| 2020   |                       1 |                        1 |                          3 |                         3 |                       1 |                         6 |                       2 |              17 |
+| 2021   |                       0 |                        1 |                          0 |                         1 |                       0 |                         6 |                       7 |              15 |
+| 2022   |                       1 |                        0 |                          0 |                         0 |                       2 |                         3 |                       5 |              11 |
+| 2023   |                       0 |                        0 |                          1 |                         1 |                       3 |                         7 |                       8 |              20 |
+| 2024   |                       3 |                        2 |                          1 |                         1 |                       1 |                         7 |                       7 |              22 |
+| Total    |                       9 |                        5 |                          6 |                        10 |                      20 |                        50 |                      65 |             165 |
+
+
+
 
 ## Probleme
 
