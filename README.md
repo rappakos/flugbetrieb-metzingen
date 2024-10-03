@@ -1,7 +1,7 @@
 # flugbetrieb-metzingen
 Daten Sammlung und Analyse
 
-## Kurze Liste
+## Bemerkungen
 
 | Tag | Bemerkung |
 |----------|-----------------------------------------|
@@ -11,7 +11,7 @@ Daten Sammlung und Analyse
 |07. & 08.09.2024| Beiden Tagen hätten fliegbar gewesen, Pilotenmangel.|
 |29.09.2024|Schönes Wetter, ohne Dienstplan hätten wir wahrscheinlich anderswo geflogen|
 
-## Statisik 
+## Statistik 
 Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.ipynb)
 
 | Jahr   | Montag | Dienstag | Mittwoch | Donnerstag | Freitag | Samstag | Sonntag |  Total |
@@ -26,19 +26,27 @@ Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.
 | 2024   |                       3 |                        2 |                          1 |                         1 |                       1 |                         7 |                       7 |              22 |
 | Total    |                       9 |                        5 |                          6 |                        10 |                      20 |                        50 |                      65 |             165 |
 
-### Perioden
+### Mangelperioden
 
 * COVID-Verbot
 * Kella-Winde Regelung kaputt ab ca. 08.10.2022 [Ladegerät](https://photos.app.goo.gl/jWHgNVxGqZ1k3UQU8) bis Frühling 2023
-* ELOWIN im Garage 18.03.2023?
+* ELOWIN im Betrieb ab 18.03.2023?
 
 
 
 ## Probleme
 
-### Haben wir Tage verpasst?
+### Haben wir Tagen verpasst?
+
+#### Wetter
+
+Basiert auf DWD distorische Daten
 
 Siehe Regression [notebook](./flight_days_checks.ipynb)
+
+#### Flugbetrieb in der Umgebung
+
+TODO @Akos
 
 ### Streckenflugpotential besser ausnutzen
 
@@ -66,7 +74,7 @@ Nicht vergleichbar.
 
 * Windenfahrerateil = ? TODO Nachfragen
 * Weniger Gastflieger = ? (mindestens keine öffentlichen Kalender)
-* Streckenflugpotenzial deutchlich niedriger: Lufträume, Lee-Lage (sinkende Luftmasse), TODO @Akos Auswertung XC Punkte
+* Streckenflugpotenzial deutchlich niedriger: Lufträume, Lee-Lage (absteigende Luftmasse), TODO @Akos Auswertung XC Punkte
 
 ### Windenfahrerdienst GSC Landesbergen
 
@@ -83,7 +91,7 @@ TODO pro/kontra
 
 ## Erwartungen von der Probephase
 
-* mehr Flugtage, mehr Flüge?
+* mehr Betriebssicherheit
 * Konzept für die Erweiterung der Probephase
   * Problem mit der Kalenderabdeckung
   * Konsequenzen, wenn das Dienst nicht stattfindet
@@ -94,8 +102,8 @@ Es gibt keine einfache Lösungen, aber wir haben Möglichkeiten an 3 Ebenen.
 
 ### Vereinsebene
 
- * WF-Anteil erhöhen (projiziert an den aktiven Mitgliedern)
- * Zusätzliche Belohnung für (E)WF-Tätigkeiten => SEE Punktsystem
+ * WF-Anteil erhöhen (projiziert an den aktiven Mitgliedern) => Stand 10.03.2024 mehrere WiFA
+ * Zusätzliche Belohnung für (E)WF-Tätigkeiten => Siehe Punktsystem
  * Kalender-Regeln überdenken
 
 ### Regional
@@ -111,7 +119,7 @@ Es gibt keine einfache Lösungen, aber wir haben Möglichkeiten an 3 Ebenen.
 
 ### Punktsystem
 * TODO @Akos Statistik über Flugtage pro Jahr und Schlepps pro Tag
-* Mitglieder müssen gewisse anzahl von Punkten leisten. ZB. (noch nicht final!)
+* Mitglieder müssen gewisse anzahl von Punkten leisten. ZB. (nur Idee)
   
   * 1 Schlepp als Startleiter = 0.5 Punkt
   * 1 Schlepp als WF = 1 Punkt
