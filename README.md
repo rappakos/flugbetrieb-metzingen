@@ -1,15 +1,19 @@
 # flugbetrieb-metzingen
 Daten Sammlung und Analyse
 
-## Bemerkungen
+[TOC]
+
+## Sondertage
 
 | Tag | Bemerkung |
-|----------|-----------------------------------------|
-|17.03.2024| Gutes Wetter, 2 Piloten mit gelb angemeldet [Screenshot von Akos](https://photos.app.goo.gl/czVUtiKxn8uRpdnp6)|
-|21.04.2024| Kräftiger Wind, 4 Starts. Ohne Dienstplan hätten wir wahrscheinlich kein Betrieb.|
-|27. & 28.04.2024| Am 27.04. (Samstag) hätten wir wahrscheinlich fliegen können, es gab Freitag noch gar keine Anmeldungen. Für Sonntag wurde mehr Wind vorhergesagt.|
-|07. & 08.09.2024| Beiden Tagen hätten fliegbar gewesen, Pilotenmangel.|
-|29.09.2024|Schönes Wetter, ohne Dienstplan hätten wir wahrscheinlich anderswo geflogen|
+|---------:|-----------------------------------------|
+|      17.03.| Gutes Wetter, 2 Piloten mit gelb angemeldet [Screenshot von Akos](https://photos.app.goo.gl/czVUtiKxn8uRpdnp6) |
+|      21.04.| Kräftiger Wind, 4 Starts. Ohne Dienstplan hätten wir wahrscheinlich kein Betrieb. |
+|27. & 28.04.| Am 27.04. (Samstag) hätten wir wahrscheinlich fliegen können, es gab Freitag noch gar keine Anmeldungen. Für Sonntag wurde mehr Wind vorhergesagt. |
+|      11.05.| Windenseminar mit Ines |
+|25. & 26.05.| Pilotinnentreff |
+|07. & 08.09.| Beiden Tagen hätten fliegbar gewesen, Pilotenmangel. |
+|      29.09.| Schönes Wetter, ohne Dienstplan hätten wir wahrscheinlich anderswo geflogen. |
 
 ## Statistik 
 Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.ipynb)
@@ -26,13 +30,12 @@ Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.
 | 2024   |                       3 |                        2 |                          1 |                         1 |                       1 |                         7 |                       7 |              22 |
 | Total    |                       9 |                        5 |                          6 |                        10 |                      20 |                        50 |                      65 |             165 |
 
+
 ### Mangelperioden
 
 * COVID-Verbot
 * Kella-Winde Regelung kaputt ab ca. 08.10.2022 [Ladegerät](https://photos.app.goo.gl/jWHgNVxGqZ1k3UQU8) bis Frühling 2023
 * ELOWIN im Betrieb ab 18.03.2023?
-
-
 
 ## Probleme
 
@@ -46,7 +49,7 @@ Siehe Regression [notebook](./flight_days_checks.ipynb)
 
 #### Flugbetrieb in der Umgebung
 
-TODO @Akos
+Siehe [notebook](./dhvxc/dhvxc_region.ipynb)
 
 ### Streckenflugpotential besser ausnutzen
 
@@ -54,9 +57,7 @@ TODO @Akos Wetterdaten & XC tracks
 
 ### Vereinsarbeit besser verteilen
 
-Idee: Punktsystem 
-Braucht App zum einfachen Tracken
-TODO @Akos Statistik
+Siehe [Punktsystem](#punktsystem-verein)
 
 
 ## Vergleich Dienstplanungen
@@ -72,59 +73,71 @@ Nicht vergleichbar.
 
 ### Windenfahrerdienst Deisterflieger
 
-* Windenfahrerateil = ? TODO Nachfragen
-* Weniger Gastflieger = ? (mindestens keine öffentlichen Kalender)
-* Streckenflugpotenzial deutchlich niedriger: Lufträume, Lee-Lage (absteigende Luftmasse), TODO @Akos Auswertung XC Punkte
+* Weniger Gastflieger (mindestens keine öffentlichen Kalender)
+* Streckenflugpotenzial deutchlich niedriger: Lufträume, Lee-Lage (absteigende Luftmasse)
 
 ### Windenfahrerdienst GSC Landesbergen
 
 * 2 Schleppstrecken (Grundsätzlich alle Windrichtungen)
 * Sie hatten WF-Plan, haben aber abgelöst
 
-TODO @Akos Details erkundigen
 
 ### Windenfahrerdienst beim Segelflugbetrieb
 
-Erwartete Arbeitsstunden => Bezahlung wenn nicht geleistet => stattdessen Punktsystem als Motivation?
+* Weniger Wetter-Abhängig
+* Betrieb braucht mehr Personal
+* Ortsgebunden
 
-TODO pro/kontra
+## Alternativen zum Windenfahrerdienstplan an 3 Ebenen
 
-## Erwartungen von der Probephase
+### WF-Anteil erhöhen `VEREIN`
 
-* mehr Betriebssicherheit
-* Konzept für die Erweiterung der Probephase
-  * Problem mit der Kalenderabdeckung
-  * Konsequenzen, wenn das Dienst nicht stattfindet
+* Stand 10.03.2024 : mehrere WiFA
 
-## Alternativen zum Windenfahrerdienstplan
+### Punktsystem `VEREIN` 
 
-Es gibt keine einfache Lösungen, aber wir haben Möglichkeiten an 3 Ebenen.
+* Am Jahresbeginn nimm Anzahl `N` von Schlepps als Durchschnitt aus dem letzten 3 (oder 5) Jahren
 
-### Vereinsebene
+#### WF 
 
- * WF-Anteil erhöhen (projiziert an den aktiven Mitgliedern) => Stand 10.03.2024 mehrere WiFA
- * Zusätzliche Belohnung für (E)WF-Tätigkeiten => Siehe Punktsystem
- * Kalender-Regeln überdenken
+  * Ziehe `A` = 60 * Anzahl von WiFA (oder Pauschal 2) ab
+  * Verteilen Zwischen `W` Windenfarher - ohne EWFs und WiFAs
+  * Schlepps zu Leisten: `n = (N - A)/w`
+  * Schlepps pro WF *veröffentlichen*
+  * Nach `n` geschafften Schlepps weitere Vorteile an WF
 
-### Regional
+#### Nicht-WF
 
- * Kooperation mit den anderen Vereinen verstärken
- * Anmeldungstool?
- * Piloten &  WF(!) austausch
+  * `M` Anzahl von nicht-WF
+  * Startleitertätigkeiten zu Leisten: `N/M`
+  * Auch veröffentlichen
 
-### DHV
 
-* Fernbedienung ermöglichen
-* Selbstschlepp ermöglichen
+### Kalender-Regeln überdenken `VEREIN`
 
-### Punktsystem
-* TODO @Akos Statistik über Flugtage pro Jahr und Schlepps pro Tag
-* Mitglieder müssen gewisse anzahl von Punkten leisten. ZB. (nur Idee)
-  
-  * 1 Schlepp als Startleiter = 0.5 Punkt
-  * 1 Schlepp als WF = 1 Punkt
-  * 1 Schlepp als EWF = 2 Punkte
-  * sonstige Tätigkeiten ebenso eingestuft
+* Anmeldungsfrist 20:00 Vorabend 
+  * auch technisch (im Kalender) 
+  * persönliches Engagement von Piloten stärken
+* "gelb" streichen
+
+### Fernbedienung `VEREIN`
+
+* weniger Anwesenden gebraucht
+  * hauptsätzlich in der Woche - in der Regel kein Mischflugbetrieb
+  * Am Wochenende gibt's mehr Leute
+
+### Kooperation mit den anderen Vereinen verstärken `REGIO`
+
+* Gemeinsame Anmeldungstool
+* Piloten &  WF(!) austausch
+
+### Selbstschlepp `DHV`
+
+* Nur langfristige Lösung
+
+
+
+
 
 
 
