@@ -16,6 +16,12 @@ Daten Sammlung und Analyse
 |      29.09.| Schönes Wetter, ohne Dienstplan hätten wir wahrscheinlich anderswo geflogen. |
 
 ## Statistik 
+
+![Auswertung der Schlepps](./schlepps-2024.svg)
+
+
+
+
 Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.ipynb)
 
 | Jahr   | Montag | Dienstag | Mittwoch | Donnerstag | Freitag | Samstag | Sonntag |  Total |
@@ -27,8 +33,10 @@ Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.
 | 2021   |                       0 |                        1 |                          0 |                         1 |                       0 |                         6 |                       7 |              15 |
 | 2022   |                       1 |                        0 |                          0 |                         0 |                       2 |                         3 |                       5 |              11 |
 | 2023   |                       0 |                        0 |                          1 |                         1 |                       3 |                         7 |                       8 |              20 |
-| 2024   |                       3 |                        2 |                          1 |                         1 |                       1 |                         7 |                       7 |              22 |
+| 2024   |                       3 |                        2 |                          1 |                         1 |                       1 |                         8 |                       7 |              23 |
 | Total    |                       9 |                        5 |                          6 |                        10 |                      20 |                        50 |                      65 |             165 |
+
+
 
 
 ### Mangelperioden

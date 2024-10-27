@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="600px" height="6cm" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+  <desc>Auswertung Schlepps 2024</desc>
+<!--
+
+  schlepps	flugtage
+Total	580	23
+Apr-Sept	532	20
+Samstag-Sonntag	379	12
+Diensthaber	116	12
+
+  -->
+
+<g id="total" >
+    <rect x="5px" y="0.25cm" width="590px"  height="0.5cm" style="fill:#82b74b;"/>
+    <text x="50%" y="0.6cm" text-anchor="middle" font-family="Helvetica, sans-serif" fill="black">2024 Total: 580 Schlepps, 23 Flugtage</text>
+</g>
+  <text x="50%" y="1.1cm" text-anchor="middle">davon</text>
+<g id="apr-sept" >
+    <!-- 300 - 532/2 = 34 -->
+    <rect x="34px" y="1.25cm" width="532px" height="0.5cm" style="fill:#82b74b;"/>
+    <text x="50%" y="1.6cm" text-anchor="middle"  font-family="Helvetica, sans-serif" fill="black">April bis September: 532 Schlepps, 20 Flugtage</text>
+</g>
+  <text x="50%" y="2.1cm" text-anchor="middle">davon</text>
+<g id="samstag-sonntag">
+    <!-- 300 - 379px/2 = 110.5 -->
+    <rect x="110.5px" y="2.25cm" width="379px" height="0.5cm" style="fill:#82b74b;"/>
+    <text x="50%" y="2.6cm" text-anchor="middle"  font-family="Helvetica, sans-serif" fill="black">Samstag + Sonntag: 379 Schlepps, 12 Flugtage</text>
+</g>    
+  <text x="50%" y="3.1cm" text-anchor="middle">davon</text>
+<g id="dienst">
+    <!-- 300 - 116px/2 = 242 -->
+    <rect x="242px" y="3.25cm" width="116px" height="0.5cm" style="fill:#82b74b;"/>
+    <text x="50%" y="3.6cm" text-anchor="middle" font-family="Helvetica, sans-serif" fill="black">Dienst: 116 Schlepps</text>    
+</g> 
+</svg>
