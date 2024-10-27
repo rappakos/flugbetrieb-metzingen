@@ -11,6 +11,7 @@ Total	580	23
 Apr-Sept	532	20
 Samstag-Sonntag	379	12
 Diensthaber	116	12
+Sonntag 63 6?
 
   -->
 
@@ -35,5 +36,11 @@ Diensthaber	116	12
     <!-- 300 - 116px/2 = 242 -->
     <rect x="242px" y="3.25cm" width="116px" height="0.5cm" style="fill:#82b74b;"/>
     <text x="50%" y="3.6cm" text-anchor="middle" font-family="Helvetica, sans-serif" fill="black">Dienst: 116 Schlepps</text>    
+</g> 
+  <text x="50%" y="4.1cm" text-anchor="middle">davon</text>
+<g id="sonntag-dienst">
+    <!-- 300 - 63/2 = 268.5 -->
+    <rect x="268.5px" y="4.25cm" width="63px" height="0.5cm" style="fill:#82b74b;"/>
+    <text x="50%" y="4.6cm" text-anchor="middle" font-family="Helvetica, sans-serif" fill="black">Sonntag Dienstschlepp: 63 Schlepps</text>    
 </g> 
 </svg>
