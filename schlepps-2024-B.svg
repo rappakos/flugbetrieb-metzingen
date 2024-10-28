@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="600px" height="6cm" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+  <desc>Auswertung Schlepps 2024</desc>
+<!--
+
+  schlepps	flugtage
+Total	580	23
+Apr-Sept	532	20
+Samstag-Sonntag	379	12
+Diensthaber	116	12
+Sonntag 63 6
+
+  -->
+
+<g id="total" >
+    <rect x="10px" y="0.25cm" width="580px"  height="0.5cm" style="fill:#82b74b;"/>
+    <text x="580px" y="0.6cm" text-anchor="end" font-family="Helvetica, sans-serif" fill="black">2024 Total: 580 Schlepps, 23 Flugtage</text>
+</g>
+
+  
+
+<g id="apr-sept" >    
+    <rect x="10px" y="1.25cm" width="48px" height="0.5cm" style="fill:#b89b72;"/>
+    <text x="31.5px" y="1.6cm" text-anchor="middle" font-family="Helvetica, sans-serif" fill="black">48</text>
+    <rect x="58px" y="1.25cm" width="532px" height="0.5cm" style="fill:#82b74b;"/>        
+    <text x="580px" y="1.6cm" text-anchor="end" font-family="Helvetica, sans-serif" fill="black">April bis September: 532 Schlepps, 20 Flugtage</text>
+</g>    
+
+  
+
+<g id="samstag-sonntag">
+    <!-- <rect x="10px" y="2.25cm" width="48px" height="0.5cm" style="fill:#b89b72;"/> -->
+    <rect x="58px" y="2.25cm" width="153px" height="0.5cm" style="fill:#ffcc66;"/>
+    <text x="63px" y="2.6cm" text-anchor="start" font-family="Helvetica, sans-serif" fill="black">Mo,Di,Mi,Do,Fr: 153</text>
+    <rect x="211px" y="2.25cm" width="379px" height="0.5cm" style="fill:#82b74b;"/>
+    <text x="580px" y="2.6cm" text-anchor="end" font-family="Helvetica, sans-serif" fill="black">Samstag + Sonntag: 379 Schlepps, 12 Flugtage</text>
+</g>  
+
+  
+
+<g id="dienst">
+    <!-- <rect x="10px" y="3.25cm" width="48px" height="0.5cm" style="fill:#b89b72;"/> -->
+    <!-- <rect x="58px" y="3.25cm" width="153px" height="0.5cm" style="fill:#ffcc66;"/> -->
+    <rect x="211px" y="3.25cm" width="263" height="0.5cm" style="fill:#ff6600;"/>
+    <text x="216px" y="3.6cm" text-anchor="start" font-family="Helvetica, sans-serif" fill="black">Sa+So Nicht-Dienst: 263</text>       
+    <rect x="474px" y="3.25cm" width="116px" height="0.5cm" style="fill:#82b74b;"/>
+    <text x="580px" y="3.6cm" text-anchor="end" font-family="Helvetica, sans-serif" fill="black">Dienst: 116</text>    
+</g> 
+  
+<g id="sonntag-dienst">
+    <rect x="474px" y="4.25cm" width="63px" height="0.5cm" style="fill:#99ff66;"/>
+    <text x="522px" y="4.6cm" text-anchor="end" font-family="Helvetica, sans-serif" fill="black">Sa: 53</text>
+    <rect x="527px" y="4.25cm" width="63px" height="0.5cm" style="fill:#82b74b;"/>
+    <text x="580px" y="4.6cm" text-anchor="end" font-family="Helvetica, sans-serif" fill="black">So: 63</text> 
+</g> 
+</svg>

@@ -19,6 +19,8 @@ Daten Sammlung und Analyse
 
 ![Auswertung der Schlepps](./schlepps-2024.svg)
 
+![Auswertung der Schlepps](./schlepps-2024-B.svg)
+
 
 
 

@@ -11,36 +11,41 @@ Total	580	23
 Apr-Sept	532	20
 Samstag-Sonntag	379	12
 Diensthaber	116	12
-Sonntag 63 6?
+Sonntag 63 6
 
   -->
 
 <g id="total" >
-    <rect x="5px" y="0.25cm" width="590px"  height="0.5cm" style="fill:#82b74b;"/>
+    <rect x="10px" y="0.25cm" width="580px" height="0.5cm" style="fill:#82b74b;"/>
     <text x="50%" y="0.6cm" text-anchor="middle" font-family="Helvetica, sans-serif" fill="black">2024 Total: 580 Schlepps, 23 Flugtage</text>
 </g>
   <text x="50%" y="1.1cm" text-anchor="middle">davon</text>
 <g id="apr-sept" >
     <!-- 300 - 532/2 = 34 -->
+    <rect x="10px" y="1.25cm" width="580px" height="0.5cm" style="fill:#c0c0c0;"/>
     <rect x="34px" y="1.25cm" width="532px" height="0.5cm" style="fill:#82b74b;"/>
     <text x="50%" y="1.6cm" text-anchor="middle"  font-family="Helvetica, sans-serif" fill="black">April bis September: 532 Schlepps, 20 Flugtage</text>
 </g>
   <text x="50%" y="2.1cm" text-anchor="middle">davon</text>
 <g id="samstag-sonntag">
+    <rect x="10px" y="2.25cm" width="580px" height="0.5cm" style="fill:#c0c0c0;"/>
     <!-- 300 - 379px/2 = 110.5 -->
     <rect x="110.5px" y="2.25cm" width="379px" height="0.5cm" style="fill:#82b74b;"/>
     <text x="50%" y="2.6cm" text-anchor="middle"  font-family="Helvetica, sans-serif" fill="black">Samstag + Sonntag: 379 Schlepps, 12 Flugtage</text>
 </g>    
   <text x="50%" y="3.1cm" text-anchor="middle">davon</text>
 <g id="dienst">
+    <rect x="10px" y="3.25cm" width="580px" height="0.5cm" style="fill:#c0c0c0;"/>
     <!-- 300 - 116px/2 = 242 -->
     <rect x="242px" y="3.25cm" width="116px" height="0.5cm" style="fill:#82b74b;"/>
-    <text x="50%" y="3.6cm" text-anchor="middle" font-family="Helvetica, sans-serif" fill="black">Dienst: 116 Schlepps</text>    
+    <text x="50%" y="3.6cm" text-anchor="middle" font-family="Helvetica, sans-serif" fill="black">Sa+So Dienst: 116 Schlepps</text>    
 </g> 
   <text x="50%" y="4.1cm" text-anchor="middle">davon</text>
 <g id="sonntag-dienst">
+    <rect x="10px" y="4.25cm" width="580px" height="0.5cm" style="fill:#c0c0c0;"/>
     <!-- 300 - 63/2 = 268.5 -->
     <rect x="268.5px" y="4.25cm" width="63px" height="0.5cm" style="fill:#82b74b;"/>
-    <text x="50%" y="4.6cm" text-anchor="middle" font-family="Helvetica, sans-serif" fill="black">Sonntag Dienstschlepp: 63 Schlepps</text>    
+    <text x="50%" y="4.6cm" text-anchor="middle" font-family="Helvetica, sans-serif" fill="black">Sonntag Dienst: 63 Schlepps=</text>    
 </g> 
+  <text x="50%" y="5.4cm" text-anchor="middle" font-family="Helvetica, sans-serif" font-size="18">12% aller Schlepps April-September</text>
 </svg>
