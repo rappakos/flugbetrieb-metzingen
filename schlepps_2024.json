@@ -1,0 +1,247 @@
+{
+    "2024-02-10": {
+    "datum-de": "10.02.2024",
+    "weekday": "samstag",
+    "dienst": "",
+    "wf": {
+            "Michi": 3
+        }
+    },
+    "2024-03-31": {
+    "datum-de": "31.03.2024",
+    "weekday": "sonntag",
+    "dienst": "",
+    "wf": {
+        "Utz": 10,
+        "Orsi": 6,
+        "Thomas": 8,
+        "Michi": 11
+        }
+    },
+    "2024-04-21": {
+        "datum-de": "21.04.2024",
+        "weekday": "sonntag",
+        "dienst": "Matthias",
+        "wf": {
+            "Matthias": 4 
+        }
+    },
+    "2024-05-04": {
+    "datum-de": "04.05.2024",
+    "weekday": "samstag",
+    "dienst": "Thomas",
+    "wf": {
+            "Thomas": 10,
+            "Utz": 11,
+            "Akos": 15
+        }
+    },
+    "2024-05-07": {
+    "datum-de": "07.05.2024",
+    "weekday": "dienstag",
+    "dienst": "",
+    "comment": "Benzinwinde Prüfung, kein Blatt, nur dhv-xc Matthias",
+    "wf": {
+            "Wolfgang": 4
+        }
+    },
+    "2024-05-08": {
+    "datum-de": "08.05.2024",
+    "weekday": "mittwoch",
+    "dienst": "",
+    "wf": {
+        "Utz": 6,
+        "Wolfgang": 4
+        }
+    },
+    "2024-05-11": {
+    "datum-de": "11.05.2024",
+    "weekday": "samstag",
+    "dienst": "Akos",
+    "comment": "Windenseminar",
+    "wf": {
+        "Thomas": 10,
+        "Helmut": 30
+        }
+     },
+    "2024-05-25": {
+    "datum-de": "25.05.2024",
+    "weekday": "samstag",
+    "dienst": "Michi",
+    "comment": "Pilotinnentreff",
+    "wf": {
+            "Thomas": 22,
+            "Michi": 18,
+            "Akos": 15
+        }
+     },
+    "2024-05-26": {
+        "datum-de": "26.05.2024",
+        "weekday": "sonntag",
+        "dienst": "Michi",
+    "comment": "Pilotinnentreff",
+    "wf": {
+            "Michi": 8,
+            "Helga (Michi)": 6,
+            "Thomas": 10,
+            "Helmut": 5
+        }
+     },
+    "2024-06-29": {
+    "datum-de": "29.06.2024",
+    "weekday": "samstag",
+    "dienst": "Thomas",
+    "comment": "Benzinwinde",
+    "wf": {
+            "Akos": 11,
+            "Thomas": 7,
+            "Daniel": 6
+        }
+     },
+    "2024-07-07": {
+    "datum-de": "07.07.2024",
+    "weekday": "sonntag",
+    "dienst": "Christian",
+    "wf": {
+            "Christian": 12
+        }
+     },
+    "2024-07-08": {
+    "datum-de": "08.07.2024",
+    "weekday": "montag",
+    "dienst": "",
+    "wf": {
+            "Michael": 6,
+            "Matthias": 6
+        }
+    },
+    "2024-07-14": {
+    "datum-de": "14.07.2024",
+    "weekday": "sonntag",
+    "dienst": "Matthias",
+    "wf": {
+            "Matthias": 13,
+            "Michi": 6,
+            "Charlotte (Michi)": 4
+        }
+     },
+    "2024-07-15": {
+    "datum-de": "15.07.2024",
+    "weekday": "montag",
+    "dienst": "",
+    "wf": {
+            "Michi": 6,
+            "Daniel": 3
+        }
+    },
+    "2024-07-18": {
+    "datum-de": "18.07.2024",
+    "weekday": "donnerstag",
+    "dienst": "",
+    "wf": {
+            "Matthias": 30
+        }
+    },
+    "2024-07-19": {
+    "datum-de": "19.07.2024",
+    "weekday": "freitag",
+    "dienst": "",
+    "wf": {
+            "Michi": 6,
+            "Martin (Michi)": 6,
+            "Hristo (Michi)": 6,
+            "Charlotte (Michi)": 6,        
+            "Thomas": 8
+        }
+    },
+    "2024-08-03": {
+    "datum-de": "03.08.2024",
+    "weekday": "samstag",
+    "dienst": "Orsi",
+    "wf": {
+            "Utz": 18,
+            "Michi": 6,
+            "Tina (Michi)": 6,
+            "Hristo (Michi)": 12
+        }
+    },
+    "2024-08-06": {
+    "datum-de": "06.08.2024",
+    "weekday": "dienstag",
+    "dienst": "",
+    "wf": {
+            "Utz": 6,
+            "Matthias": 10
+        }
+    },
+    "2024-08-26": {
+    "datum-de": "26.08.2024",
+    "weekday": "montag",
+    "dienst": "",
+    "wf": {
+            "Wolfgang": 28,
+            "Akos": 13,
+            "Orsi": 3
+        }
+     },
+    "2024-08-31": {
+    "datum-de": "31.08.2024",
+    "weekday": "samstag",
+    "dienst": "Akos",
+    "comment": "Blatt flasches Datum 30.09.2024",
+    "wf": {
+            "Akos": 18,
+            "Thomas": 6,
+            "Matthias": 10,
+            "Utz": 2        
+        }
+     },
+    "2024-09-22": {
+    "datum-de": "22.09.2024",
+    "weekday": "sonntag",
+    "dienst": "Georg",
+    "wf": {
+            "Georg (Helmut)": 4,
+            "Charlotte (Helmut)": 14,
+            "Hristo (Helmut)": 12,
+            "Martin (Helmut)": 16
+        }
+    },
+    "2024-09-29": {
+    "datum-de": "29.09.2024",
+    "weekday": "sonntag",
+    "dienst": "Orsi",
+    "wf": {
+        "Orsi": 16,
+        "Akos": 12
+        }
+    },
+    "2024-10-26": {
+    "datum-de": "26.10.2024",
+    "weekday": "samstag",
+    "dienst": "",
+    "wf": {
+        "Akos": 10
+        }
+     },
+    "2024-10-31": {
+    "datum-de": "31.10.2024",
+    "weekday": "donnerstag",
+    "dienst": "",
+    "comment": "Refomationstag",
+    "wf": {
+        "Dietmar (Michi)": 7,
+        "Charlotte (Michi)": 5
+        }
+    },
+    "2024-11-03": {
+    "datum-de": "03.11.2024",
+    "weekday": "sonntag",
+    "dienst": "",
+    "comment": "Windenseminar",
+    "wf": {
+        "Utz": 22,
+        "Martin (Michi)": 14
+        }
+    }
+}

@@ -19,8 +19,6 @@ Daten Sammlung und Analyse
 
 ![Auswertung der Schlepps](./schlepps-2024.svg)
 
-![Auswertung der Schlepps](./schlepps-2024-B.svg)
-
 
 
 
@@ -35,7 +33,7 @@ Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.
 | 2021   |                       0 |                        1 |                          0 |                         1 |                       0 |                         6 |                       7 |              15 |
 | 2022   |                       1 |                        0 |                          0 |                         0 |                       2 |                         3 |                       5 |              11 |
 | 2023   |                       0 |                        0 |                          1 |                         1 |                       3 |                         7 |                       8 |              20 |
-| 2024   |                       3 |                        2 |                          1 |                         1 |                       1 |                         8 |                       7 |              23 |
+| 2024   |                       3 |                        2 |                          1 |                         2 |                       1 |                         8 |                       8 |              25 |
 | Total    |                       9 |                        5 |                          6 |                        10 |                      20 |                        50 |                      65 |             165 |
 
 
