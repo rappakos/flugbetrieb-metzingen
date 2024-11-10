@@ -109,7 +109,6 @@ Gute Tage in Lüdingen/Leese, Börry/Porta, und interessanterweise Rammi nicht n
 | 2024-08-03   |          23 |          0 |       0 |        0 |           0 |            0 |       0 |       2 |             6 |            15 | SW             |           9    |      5.06 |
 | 2024-09-22   |          16 |         16 |      12 |        0 |           0 |            0 |       1 |       0 |             0 |            13 | SO             |           7.2  |     10.25 |
 | 2024-09-29   |          13 |          7 |      16 |        6 |           0 |            0 |       0 |       8 |             0 |            16 | S              |           6.12 |      9.21 |
-25
 
 Die "HAJ Wind" sind die historische DWD Windwerte am Hannover Flughafen um 13 Uhr am Tag.
 
