@@ -162,3 +162,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 screenshots/luftraum_feggendorf.xcf
+screenshots/wf_plan_2024.xcf
+pro-wf-dienst.md

@@ -20,8 +20,6 @@ Daten Sammlung und Analyse
 ![Auswertung der Schlepps](./schlepps-2024.svg)
 
 
-
-
 Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.ipynb)
 
 | Jahr   | Montag | Dienstag | Mittwoch | Donnerstag | Freitag | Samstag | Sonntag |  Total |
@@ -45,7 +43,7 @@ Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.
 * Kella-Winde Regelung kaputt ab ca. 08.10.2022 [Ladegerät](https://photos.app.goo.gl/jWHgNVxGqZ1k3UQU8) bis Frühling 2023
 * ELOWIN im Betrieb ab 18.03.2023?
 
-## Probleme
+## Betreibs-Probleme
 
 ### Haben wir Tagen verpasst?
 
@@ -67,6 +65,11 @@ TODO @Akos Wetterdaten & XC tracks
 
 Siehe [Punktsystem](#punktsystem-verein)
 
+### Flugsicherheit 
+
+* Wie viel Praxis (Schlepps, Schlepptage) braucht ein WF (pro Jahr), um die Piloten nicht zu gefährden?
+* Wie viele Schlepps pro Tag pro WF sind noch sicher? Wie viele Stunden sind noch sicher an einem Hitzetag?
+
 
 ## Vergleich Dienstplanungen
 
@@ -76,8 +79,9 @@ Nicht vergleichbar.
 
 * Gleichbeteiligung: Alle Mitglieder sind eingeteilt (nicht nur eine Minderheit wie die WF)
 * Vereinsarbeit: Kein Windenverein => Fahrdienst grundsätzlich einzige Möglichkeit in der Arbeit teilzunehmen
-* Flugerwartungen am Diensttag: An guten Tagen kann man trotz Fahrdienst mit einem längeren Flug rechnen. TODO @Akos Vergleich Hangstarts (Rammi) vs Winde
+* Flugerwartungen am Diensttag: An guten Tagen kann man trotz Fahrdienst mit einem längeren Flug rechnen.
 * Kalendarabdeckung: Viel mehr Mitglieder => Samstag, Sonntag + Feiertage können mit 2 Fahrer
+* Shuttle fahren 4 Stunden vs Winde fahren 4 Stunden in der Hitze?
 
 ### Windenfahrerdienst Deisterflieger
 
@@ -125,7 +129,7 @@ Nicht vergleichbar.
 
 * Anmeldungsfrist 20:00 Vorabend 
   * auch technisch (im Kalender) 
-  * persönliches Engagement von Piloten stärken
+  * persönliches Engagement von Piloten verstärken
 * "gelb" streichen
 
 ### Fernbedienung `VEREIN`
