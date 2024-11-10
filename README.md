@@ -95,7 +95,49 @@ Details siehe [notebook](./dhvxc/dhvxc_region.ipynb)
 
 Anhand der Anzahl der DHV XC Flüge im Gelände in der Umgebung (Lüdingen,  Leese,  Estorf, Brunsberg, Kella,  Börry, Porta, Königszinne, Rammelsberg), versuchen RandomForestRegressor zu trainieren. Trainingsdaten aus 2023, Testdaten dann 2024. Nur Samstags und Sonntags!
 
-Laut RandomForestRegressor haben wir folgenden Wochenendstagen in 2024 verpasst:
+Ohne großartig Optimierung, mit einem Grenzwert von 5 vorhergesagten Flüge können wir die Tage folgendermaßen klassifizieren:
+
+##### True Positive
+
+Gute Tage in Lüdingen/Leese, Börry/Porta, und interessanterweise Rammi nicht nur SW
+
+| Datum   |   Metzingen |   Lüdingen |   Leese |   Estorf |   Brunsberg |   Kella Berg |   Börry |   Porta |   Königszinne |   Rammelsberg | HAJ Wind dir   |   HAJ Wind str |   predict |
+|:-------------|------------:|-----------:|--------:|---------:|------------:|-------------:|--------:|--------:|--------------:|--------------:|:---------------|---------------:|----------:|
+| 2024-05-26   |           7 |          0 |       0 |        8 |           0 |            0 |      13 |      17 |             0 |             0 | S              |          14.4  |      8.94 |
+| 2024-06-29   |           5 |         15 |      15 |        0 |           0 |            5 |       0 |       0 |             0 |             0 | O              |          11.52 |     13.89 |
+| 2024-07-14   |          18 |          0 |       0 |        0 |           0 |            0 |       2 |      12 |             2 |             0 | SSW            |          18.36 |      8.57 |
+| 2024-08-03   |          23 |          0 |       0 |        0 |           0 |            0 |       0 |       2 |             6 |            15 | SW             |           9    |      5.06 |
+| 2024-09-22   |          16 |         16 |      12 |        0 |           0 |            0 |       1 |       0 |             0 |            13 | SO             |           7.2  |     10.25 |
+| 2024-09-29   |          13 |          7 |      16 |        6 |           0 |            0 |       0 |       8 |             0 |            16 | S              |           6.12 |      9.21 |
+25
+
+Die "HAJ Wind" sind die historische DWD Windwerte am Hannover Flughafen um 13 Uhr am Tag.
+
+##### True Negative
+
+Querwind (Hammertage am Brunsberg, Kella, Rammi), oder kräftiger Wind (anderswo auch grenzwertig), insgesamt 25 Tage.
+
+##### False Positive
+
+Laut Model hätten wir folgende Tagen lassen sollen:
+
+| Datum   |   Metzingen |   Lüdingen |   Leese |   Estorf |   Brunsberg |   Kella Berg |   Börry |   Porta |   Königszinne |   Rammelsberg | HAJ Wind dir   |   HAJ Wind str |   predict |
+|:-------------|------------:|-----------:|--------:|---------:|------------:|-------------:|--------:|--------:|--------------:|--------------:|:---------------|---------------:|----------:|
+| 2024-03-31   |          13 |          0 |       0 |        0 |           0 |            1 |       0 |       0 |             0 |             3 | ONO            |           8.28 |      0.08 |
+| 2024-04-21   |           2 |          0 |       0 |        0 |           0 |            0 |       0 |       0 |             0 |             0 | ONO            |          22.32 |      0    |
+| 2024-05-04   |          13 |          0 |       0 |        0 |           0 |            0 |       0 |       1 |             0 |             0 | SO             |          10.08 |      0    |
+| 2024-05-11   |           9 |          0 |       0 |       10 |           0 |            0 |       0 |       0 |             0 |             7 | N              |           7.56 |      2.78 |
+| 2024-05-25   |          11 |          0 |       0 |        0 |           0 |            0 |       0 |       6 |             0 |             0 | SSW            |           9    |      0.33 |
+| 2024-07-07   |           5 |          0 |       0 |        0 |           0 |            0 |       0 |       3 |             0 |             0 | WSW            |          17.28 |      0    |
+| 2024-08-31   |          19 |          6 |       0 |        0 |           0 |            1 |       0 |       0 |             0 |             0 | O              |          21.6  |      4.45 |
+
+Mehrere Tagen sind [oben](#sondertage) gelistet: 21.04. mit Starkwind, 11.05. und 25.05. Veranstaltungen. 07.07. hatte Christian D Dienst.
+Zum 31.08. liegt der verhergesagte Wert nah zum Schnittwert 5.
+
+
+##### False Positive = Verpasste Tage
+
+Laut Model haben wir folgenden Wochenendstagen in 2024 verpasst:
 
 | Datum   |   Lüdingen |   Leese |   Estorf |   Brunsberg |  Kella |   Börry |   Porta |   Königszinne |   Rammelsberg | HAJ Wind dir   |   HAJ Wind str |   predict |
 |:-------------|-----------:|--------:|---------:|------------:|-------------:|--------:|--------:|--------------:|--------------:|:---------------|---------------:|----------:|
@@ -108,6 +150,7 @@ Laut RandomForestRegressor haben wir folgenden Wochenendstagen in 2024 verpasst:
 | 2024-09-08   |          0 |       0 |        0 |           0 |            0 |       0 |       0 |             0 |            11 | W              |          14.76 |      6.2  |
 | 2024-09-21   |         21 |       0 |        0 |          12 |            6 |       0 |       0 |             0 |             0 | O              |          19.8  |     10.09 |
 
+Mehrere Tagen sind [oben](#sondertage) gelistet - meistens Pilotenmangel.
 
 
 ### Streckenflugpotential besser ausnutzen
