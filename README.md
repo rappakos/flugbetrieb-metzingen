@@ -91,9 +91,22 @@ Siehe Regression [notebook](./flight_days_checks.ipynb)
 
 #### Flugbetrieb in der Umgebung
 
-Siehe [notebook](./dhvxc/dhvxc_region.ipynb)
+Details siehe [notebook](./dhvxc/dhvxc_region.ipynb)
 
-Insbesonders Leese und Lüdingen
+Anhand der Anzahl der DHV XC Flüge im Gelände in der Umgebung (Lüdingen,  Leese,  Estorf, Brunsberg, Kella,  Börry, Porta, Königszinne, Rammelsberg), versuchen RandomForestRegressor zu trainieren. Trainingsdaten aus 2023, Testdaten dann 2024. Nur Samstags und Sonntags!
+
+Laut RandomForestRegressor haben wir folgenden Wochenendstagen in 2024 verpasst:
+
+| Datum   |   Lüdingen |   Leese |   Estorf |   Brunsberg |  Kella |   Börry |   Porta |   Königszinne |   Rammelsberg | HAJ Wind dir   |   HAJ Wind str |   predict |
+|:-------------|-----------:|--------:|---------:|------------:|-------------:|--------:|--------:|--------------:|--------------:|:---------------|---------------:|----------:|
+| 2024-01-28   |          0 |       0 |        2 |           0 |            0 |      10 |      14 |             0 |             0 | SSO            |          21.24 |      8.67 |
+| 2024-03-02   |          0 |       0 |        0 |           0 |            0 |      17 |      30 |             0 |             0 | SSO            |          18.36 |      6.27 |
+| 2024-04-06   |          0 |       0 |        0 |           0 |            0 |      20 |      23 |             0 |             0 | SSO            |          20.88 |      6.15 |
+| 2024-04-27   |          0 |       0 |        0 |           0 |            0 |      14 |      29 |             0 |             0 | SSO            |          20.88 |      6.35 |
+| 2024-07-20   |          5 |       0 |       15 |           3 |            2 |       7 |       2 |             0 |             0 | O              |          14.4  |      5.23 |
+| 2024-09-07   |         14 |       0 |       17 |           1 |            0 |       0 |       0 |             0 |             0 | O              |           9.36 |     12.29 |
+| 2024-09-08   |          0 |       0 |        0 |           0 |            0 |       0 |       0 |             0 |            11 | W              |          14.76 |      6.2  |
+| 2024-09-21   |         21 |       0 |        0 |          12 |            6 |       0 |       0 |             0 |             0 | O              |          19.8  |     10.09 |
 
 
 
