@@ -1,13 +1,47 @@
-# flugbetrieb-metzingen
-Daten Sammlung und Analyse
+# Flugbetrieb Metzingen 2024
 
-[TOC]
+## Inhaltsverzeichnis
+
+[Protokoll](#protokoll)
+[Sondertage](#sondertage)
+[Statistik](#statistik)
+[Offene Probleme](#offene-probleme)
+[Dienstplanen](#dienstplanen)
+[Alternativen](#alternativen)
+
+
+## Protokoll
+
+JHV vom 07.03.2024, unten "10. Verschiedenes"
+
+> Die Organisation des beschlossenen Probebetriebs Windenfahrerdienst wird von Utz
+> vorgestellt. Nach der Diskussion wird Folgendes festgelegt:
+>
+> * An allen Sonntagen zw. April und Sept wird verbindlich ein Windenfahrer (WF) als
+> Verantwortlicher festgelegt, die Dienste können getauscht werden. Maximal sind es 2
+> Dienste pro WF.
+> * Schleppbetrieb findet statt, wenn spätestens Samstag 10 Uhr 4 Teilnehmer (grün! in
+> Verabredungstool auf Website) fliegen wollen, dabei zählen nur Mitglieder, aber auch WF
+> und Startleiter*in.
+> * Der/die WF bestimmt selbst, wann er/sie Schluss macht, er/sie beginnt den Tag nur. Es
+> gibt keine minimale bzw. maximale Anzahl von Schlepps, die er /sie machen muss, da dies
+> abhängig ist von seiner/ihrer körperlichen und mentalen Verfassung an diesem Tag. Es
+> wird davon ausgegangen, dass Piloten sich zum Abwechseln der Diensthabenden
+> bereiterklären.
+> * Ein Startleiter*in soll auch jeweils bestimmt werden
+> * Die Schriftführerin führt und pflegt die Tabelle mit den Diensten. Alle getauschten
+>Termine sind der Schriftführerin umgehend mitzuteilen. Diese veröffentlicht die aktuelle
+>Liste im internen Bereich auf der Website sowie in der Mitglieder-WhattsApp-Gruppe.
+
+### Was vom Protokoll fehlt
+
+Mehrere andwesenden Windenfahrer hatten gegen dem Diensplan protestiert. ![wf_plan_2024](./screenshots/wf_plan_2024.png)
 
 ## Sondertage
 
 | Tag | Bemerkung |
 |---------:|-----------------------------------------|
-|      17.03.| Gutes Wetter, 2 Piloten mit gelb angemeldet [Screenshot von Akos](https://photos.app.goo.gl/czVUtiKxn8uRpdnp6) |
+|      17.03.| Kein Betrieb. Gutes Wetter, 2 Piloten mit gelb angemeldet [Screenshot von Akos](https://photos.app.goo.gl/czVUtiKxn8uRpdnp6) |
 |      21.04.| Kräftiger Wind, 4 Starts. Ohne Dienstplan hätten wir wahrscheinlich kein Betrieb. |
 |27. & 28.04.| Am 27.04. (Samstag) hätten wir wahrscheinlich fliegen können, es gab Freitag noch gar keine Anmeldungen. Für Sonntag wurde mehr Wind vorhergesagt. |
 |      11.05.| Windenseminar mit Ines |
@@ -16,6 +50,8 @@ Daten Sammlung und Analyse
 |      29.09.| Schönes Wetter, ohne Dienstplan hätten wir wahrscheinlich anderswo geflogen. |
 
 ## Statistik 
+
+Rohe Daten in [JSON](schlepps_2024.json)
 
 ![Auswertung der Schlepps](./schlepps-2024.svg)
 
@@ -43,13 +79,13 @@ Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.
 * Kella-Winde Regelung kaputt ab ca. 08.10.2022 [Ladegerät](https://photos.app.goo.gl/jWHgNVxGqZ1k3UQU8) bis Frühling 2023
 * ELOWIN im Betrieb ab 18.03.2023?
 
-## Betreibs-Probleme
+## Offene Probleme
 
 ### Haben wir Tagen verpasst?
 
 #### Wetter
 
-Basiert auf DWD distorische Daten
+Schwierig. Basiert auf DWD distorische Daten?
 
 Siehe Regression [notebook](./flight_days_checks.ipynb)
 
@@ -57,9 +93,26 @@ Siehe Regression [notebook](./flight_days_checks.ipynb)
 
 Siehe [notebook](./dhvxc/dhvxc_region.ipynb)
 
+Insbesonders Leese und Lüdingen
+
+
+
 ### Streckenflugpotential besser ausnutzen
 
-TODO @Akos Wetterdaten & XC tracks
+DHV XC Daten [notebook](./dhvxc/dhvxc_Metzi.ipynb)
+
+|   Jahr |  # Flüge > 50 Punkte | # Flüge > 30 Punkte* |
+|-------:|----------------------:|----------------------:
+|   2024 |                     4 |                    10|  
+|   2023 |                    11 |                    23|
+|   2022 |                     7 |                    11|
+|   2021 |                     1 |                     3|
+|   2020 |                     3 |                     8|
+|   2019 |                     6 |                     9|
+|   2018 |                    14 |                    20|
+
+(*) 15 km FAI = 30 Punkte im DHV XC
+
 
 ### Vereinsarbeit besser verteilen
 
@@ -71,7 +124,7 @@ Siehe [Punktsystem](#punktsystem-verein)
 * Wie viele Schlepps pro Tag pro WF sind noch sicher? Wie viele Stunden sind noch sicher an einem Hitzetag?
 
 
-## Vergleich Dienstplanungen
+## Dienstplanen
 
 ### Fahrdienst HDGV
 
@@ -93,18 +146,28 @@ Nicht vergleichbar.
 * 2 Schleppstrecken (Grundsätzlich alle Windrichtungen)
 * Sie hatten WF-Plan, haben aber abgelöst
 
+### Lüdingen
+
+Aktuell keinen Dienstplan.
+
 
 ### Windenfahrerdienst beim Segelflugbetrieb
+
+Nicht vergleichbar.
 
 * Weniger Wetter-Abhängig
 * Betrieb braucht mehr Personal
 * Ortsgebunden
 
-## Alternativen zum Windenfahrerdienstplan an 3 Ebenen
+## Alternativen
 
 ### WF-Anteil erhöhen `VEREIN`
 
-* Stand 10.03.2024 : mehrere WiFA
+* Stand Oktober 2024 : mehrere WiFA
+
+### Wetterdienst `VEREIN` 
+
+* Ausgewählten Mitglieder halten das Wetter im Auge
 
 ### Punktsystem `VEREIN` 
 
@@ -135,6 +198,7 @@ Nicht vergleichbar.
 ### Fernbedienung `VEREIN`
 
 * weniger Anwesenden gebraucht
+
   * hauptsätzlich in der Woche - in der Regel kein Mischflugbetrieb
   * Am Wochenende gibt's mehr Leute
 
