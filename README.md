@@ -61,8 +61,8 @@ Die Flugtage lassen sich nach bestimmten Eigenschaften kategorisieren.
 
 |Nr |Bezeichnung| Tage | Fl&uuml;ge |
 |:--|:----------|-----:|-----------:|
-|1 |Schlepps an Arbeitstagen im Hauptsaison| 8|157|
-|2 | Veranstaltungen (Seminar, Pilotinnentreff) | 3|124|
+|#1 |Flugbetrieb an Arbeitstagen im Hauptsaison| 8|157|
+|#2 | Veranstaltungen (Seminar, Pilotinnentreff) | 3|124|
 |...|...|..|..|
 |n | Sonntag Dienstschlepp |6| 63|
 
