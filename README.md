@@ -130,7 +130,7 @@ Die "HAJ Wind" sind die historische DWD Windwerte am Hannover Flughafen um 13 Uh
 
 Querwind (Hammertage am Brunsberg, Kella, Rammi), oder kräftiger Wind (anderswo auch grenzwertig), insgesamt 25 Tage.
 
-##### False Positive
+##### False Negative
 
 Laut Model hätten wir folgende Tagen lassen sollen:
 
@@ -185,7 +185,24 @@ DHV XC Daten [notebook](./dhvxc/dhvxc_Metzi.ipynb)
 
 ### Vereinsarbeit besser verteilen
 
-Siehe [Punktsystem](#punktsystem-verein)
+#### Ist ein gerechter Dienstplan möglich? 
+
+Rahmbedingungen:
+* 14 WF (inklusive EWF) im Dienstplan
+* Haupstaison: 26 Wochenende, 2-3 Feiertage
+
+| Konfliktpunkte         | Pro              |Kontra            |
+|:-----------------------|:-----------------|:-----------------|
+| Sollen nicht-WF (SL) auch im Dienstplan sein? | Ja, sonst bestimmt die Mehrheit die Aufgaben einer Minderheit, die sowieso schon Mehraufgaben haben | Nein, die nicht so aktive Mitglieder sollen |
+| Soll der Vorstand, Wärter im Dienst teilnehmen?  | Ja, sonst ist die Abdeckung des Kalenders ist nur mit > 2 Tage gelwährleistet | Nein, sie arbeiten schon genug im Verein |
+
+
+
+
+
+#### Alternativen
+
+Siehe [Punktsystem](#punktsystem-verein) ?
 
 ### Flugsicherheit 
 
@@ -205,12 +222,12 @@ Nicht vergleichbar.
 * Kalendarabdeckung: Viel mehr Mitglieder => Samstag, Sonntag + Feiertage können mit 2 Fahrer
 * Shuttle fahren 4 Stunden vs Winde fahren 4 Stunden in der Hitze?
 
-### Windenfahrerdienst Deisterflieger
+### Deisterflieger
 
 * Weniger Gastflieger (mindestens keine öffentlichen Kalender)
 * Streckenflugpotenzial deutchlich niedriger: Lufträume, Lee-Lage (absteigende Luftmasse)
 
-### Windenfahrerdienst GSC Landesbergen
+### GSC Landesbergen
 
 * 2 Schleppstrecken (Grundsätzlich alle Windrichtungen)
 * Sie hatten WF-Plan, haben aber abgelöst
@@ -238,6 +255,13 @@ Nicht vergleichbar.
 
 * Ausgewählten Mitglieder halten das Wetter im Auge
 
+### Kalender-Regeln überdenken `VEREIN`
+
+* Anmeldungsfrist 20:00 Vorabend 
+  * auch technisch (im Kalender) 
+  * persönliches Engagement von Piloten verstärken
+* "gelb" streichen
+
 ### Punktsystem `VEREIN` 
 
 * Am Jahresbeginn nimm Anzahl `N` von Schlepps als Durchschnitt aus dem letzten 3 (oder 5) Jahren
@@ -256,13 +280,6 @@ Nicht vergleichbar.
   * Startleitertätigkeiten zu Leisten: `N/M`
   * Auch veröffentlichen
 
-
-### Kalender-Regeln überdenken `VEREIN`
-
-* Anmeldungsfrist 20:00 Vorabend 
-  * auch technisch (im Kalender) 
-  * persönliches Engagement von Piloten verstärken
-* "gelb" streichen
 
 ### Fernbedienung `VEREIN`
 
