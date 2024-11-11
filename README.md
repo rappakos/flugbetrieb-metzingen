@@ -55,6 +55,20 @@ Rohe Daten in [JSON](schlepps_2024.json)
 
 ![Auswertung der Schlepps](./schlepps-2024.svg)
 
+### Besonderheiten
+
+Die Flugtage lassen sich nach bestimmten Eigenschaften kategorisieren.
+
+|Nr |Bezeichnung| Tage | Fl&uuml;ge |
+|:--|:----------|-----:|-----------:|
+|1 |Schlepps an Arbeitstagen im Hauptsaison| 8|157|
+|2 | Veranstaltungen (Seminar, Pilotinnentreff) | 3|124|
+|...|...|..|..|
+|n | Sonntag Dienstschlepp |6| 63|
+
+
+
+
 
 Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.ipynb)
 
@@ -93,9 +107,9 @@ Siehe Regression [notebook](./flight_days_checks.ipynb)
 
 Details siehe [notebook](./dhvxc/dhvxc_region.ipynb)
 
-Anhand der Anzahl der DHV XC Flüge im Gelände in der Umgebung (Lüdingen,  Leese,  Estorf, Brunsberg, Kella,  Börry, Porta, Königszinne, Rammelsberg), versuchen RandomForestRegressor zu trainieren. Trainingsdaten aus 2023, Testdaten dann 2024. Nur Samstags und Sonntags!
+Anhand der Anzahl der DHV XC Flüge in der Umgebung (Lüdingen,  Leese,  Estorf, Brunsberg, Kella,  Börry, Porta, Königszinne, Rammelsberg) können wir zB einen RandomForestRegressor trainieren. Trainingsdaten aus 2023, Testdaten dann 2024. Nur Samstags und Sonntags!
 
-Ohne großartig Optimierung, mit einem Grenzwert von 5 vorhergesagten Flüge können wir die Tage folgendermaßen klassifizieren:
+Ohne großartige Optimierung, ab einem Grenzwert von 5 vorhergesagten Flüge können wir die Tage folgendermaßen klassifizieren:
 
 ##### True Positive
 
