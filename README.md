@@ -99,7 +99,7 @@ Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.
 
 #### Wetter
 
-Schwierig. Basiert auf DWD distorische Daten?
+Schwierig. Welche Daten?
 
 Siehe Regression beim [Notebook](./flight_days_checks.ipynb) und [Notebook](./predictions.ipynb) 
 
