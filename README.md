@@ -89,7 +89,7 @@ Flugtage im DHV XC bzw Xcontest ab 2017 aus dem [notebook](./flight_days_checks.
 
 ### Mangelperioden
 
-* COVID-Verbot
+* COVID-Verbot 28.03.2020 bis  10.05.2020
 * Kella-Winde Regelung kaputt ab ca. 08.10.2022 [Ladegerät](https://photos.app.goo.gl/jWHgNVxGqZ1k3UQU8) bis Frühling 2023
 * ELOWIN im Betrieb ab 18.03.2023?
 
