@@ -17,6 +17,7 @@ Based on [notes](https://atoc.colorado.edu/~cassano/atoc4720/chapter_summaries/c
 | Gravity |g | 10 ms<sup>-2</sup> | 10 ms<sup>-2</sup> |
 | Coriolis | f = 2 Omega sin 45 | 10<sup>-4</sup> | 10<sup>-4</sup>|
 | density variation | δρ/ρ, δT/T  | 10<sup>-2</sup> |  10<sup>-2</sup> |
+| air thermal diffusivity | k/C<sub>p</sub> | | 10<sup>-5</sup> |
 
 ## Horizontal wind equations
 
@@ -33,3 +34,22 @@ Based on [notes](https://atoc.colorado.edu/~cassano/atoc4720/chapter_summaries/c
 | scale | UW / L | UW / L | W<sup>2</sup> / H | P / ρH | g | g δρ/ρ  | nu W/ L<sup>2</sup> | f0 U |
 | wheather | 10<sup>-7</sup>  | 10<sup>-7</sup>  | 10<sup>-8</sup> | 10 | 10 | ? | 10<sup>-19</sup> |  10<sup>-3</sup> |
 | thermal | 10<sup>-2</sup> |  10<sup>-2</sup> |  10<sup>-2</sup> | 100 | 10 |   10<sup>-1</sup> | 10<sup>-9</sup>  |  10<sup>-4</sup> |
+
+## Continuity equation
+
+| Feature | Density change | Horizontal advection | Vertical advection | Velocity field divergence |
+|----|----|----|----|----|
+| Term | δρ/δt | u  δρ/δx | w  δρ/δz | ρ div V |
+| Scale | δρ U/L | δρ U/L | δρ W/H | ρ U/L |
+| thermal |  10<sup>-4</sup> |  10<sup>-4</sup>|  10<sup>-4</sup>|  10<sup>-2</sup>|
+
+
+## Internal energy
+
+ δT circa 1 Kelvin ?
+
+| Feature | Temp change | Horizontal advection | Vertical advection | Heat diffusion |
+|----|----|----|----|----|
+| Term | δT/δt | u  δT/δx | w  δT/δz | (k / ρ C<sub>p</sub>) δ<sub>z</sub><sup>2</sup> T |
+| Scale | δT U/L | δT U/L | δT W/H | (k / ρ C<sub>p</sub>) δT/H<sup>2</sup> |
+| thermal | 10<sup>-2</sup> | 10<sup>-2</sup> | 10<sup>-2</sup> | 10<sup>-9</sup> |
